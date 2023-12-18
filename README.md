@@ -6,25 +6,24 @@
 SR Flip-Flop
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
-![image](https://user-images.githubusercontent.com/36288975/167910294-bb550548-b1dc-4cba-9044-31d9037d476b.png)
+ ![Screenshot 2023-12-18 204405](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/222a6ef8-2f43-4ebb-b992-77c399265279)
 
  
 This circuit has two inputs S & R and two outputs Qtt & Qtt’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 The following table shows the state table of SR flip-flop.
 
+![Screenshot 2023-12-18 204412](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/a40907a8-1c59-450e-ae18-5d7b1d3d5e5b)
 
-![image](https://user-images.githubusercontent.com/36288975/167910648-ced88e69-869c-42e2-9718-a285a3902446.png)
-
+ 
 
 Here, Qtt & Qt+1t+1 are present state & next state respectively. So, SR flip-flop can be used for one of these three functions such as Hold, Reset & Set based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of SR flip-flop.
 Present Inputs	Present State	Next State
 
-
-![image](https://user-images.githubusercontent.com/36288975/167908180-5fc9d589-1cb5-41f5-b2c8-927e04f5f387.png)
-
+![Screenshot 2023-12-18 204420](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/242ae440-fc17-4151-bc04-3c9758efcc4d)
+ 
 By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. The three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
 
-![image](https://user-images.githubusercontent.com/36288975/167908214-25b30a54-db20-4bcb-9385-5f93a1982a09.png)
+ ![Screenshot 2023-12-18 204432](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/154931f0-b75d-48cf-9a05-e1a5e4898b19)
 
  
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is
@@ -35,10 +34,13 @@ Q(t+1)=S+R′Q(t)Q(t+1)=S+R′Q(t)
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
  
 This circuit has single input D and two outputs Qtt & Qtt’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
-The following table shows the state table of D flip-flop.
-![image](https://user-images.githubusercontent.com/36288975/167908342-e03f0cbb-5958-43bb-b74a-5e3ec2341675.png)
+The following table shows the state 
 
-![image](https://user-images.githubusercontent.com/36288975/167910325-aeef0739-0a54-40e2-bebd-6f5fa0cad10e.png)
+![Screenshot 2023-12-18 204723](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/c6b96d14-5fa3-456e-85f6-7b99396ff5cb)
+table of D flip-flop.
+
+ ![Screenshot 2023-12-18 204733](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/8e9b3237-df81-450a-88a3-981ca5b8351c)
+
 
 
 
@@ -54,26 +56,28 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 ### JK Flip-Flop
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
-![image](https://user-images.githubusercontent.com/36288975/167910378-d2d984a7-2815-4d17-8c41-ee4bdf59ec24.png) 
+
+ ![Screenshot 2023-12-18 204747](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/665c3972-38a6-4b92-ae7d-d38df9ccae68)
 
  
 This circuit has two inputs J & K and two outputs Qtt & Qtt’. The operation of JK flip-flop is similar to SR flip-flop. Here, we considered the inputs of SR flip-flop as S = J Qtt’ and R = KQtt in order to utilize the modified SR flip-flop for 4 combinations of inputs.
 The following table shows the state table of JK flip-flop.
 
+![Screenshot 2023-12-18 204915](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/63505092-6225-4527-8ce9-6db94eb991fb)
 
-![image](https://user-images.githubusercontent.com/36288975/167908575-59c35afb-50d3-46a2-888c-47478a3179d5.png)
-
+ 
 Here, Qtt & Qt+1t+1 are present state & next state respectively. So, JK flip-flop can be used for one of these four functions such as Hold, Reset, Set & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of JK flip-flop.
 Present Inputs	Present State	Next State
 
-![image](https://user-images.githubusercontent.com/36288975/167908664-c854ffe9-0bd3-44c2-bfa6-e53928181c69.png)
+ ![Screenshot 2023-12-18 204926](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/91e04757-5fbc-4917-b02f-47bc63b18dfb)
 
 
 By using three variable K-Map, we can get the simplified expression for next state, Qt+1t+1. Three variable K-Map for next state, Qt+1t+1 is shown in the following figure.
  
- 
- ![image](https://user-images.githubusercontent.com/36288975/167908688-fa93c3e9-8323-4864-947d-c11d163d5a90.png)
+ ![download](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/c6e816db-fde5-41e1-a4f8-9f32c11b21c0)
 
+ 
+ 
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is
 Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
@@ -82,20 +86,24 @@ Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 ### T Flip-Flop
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
-![image](https://user-images.githubusercontent.com/36288975/167911534-5f3c445d-bc68-46e2-9a9c-7efce5febc60.png)
+ ![Screenshot 2023-12-18 205209](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/06751c1a-4cec-4e36-a1af-6f7bc615cdbb)
 
 
 
 This circuit has single input T and two outputs Qtt & Qtt’. The operation of T flip-flop is same as that of JK flip-flop. Here, we considered the inputs of JK flip-flop as J = T and K = T in order to utilize the modified JK flip-flop for 2 combinations of inputs. So, we eliminated the other two combinations of J & K, for which those two values are complement to each other in T flip-flop.
 The following table shows the state table of T flip-flop.
 
+![Screenshot 2023-12-18 205215](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/0fe08617-3ad3-4ed7-861a-ea6a0b539544)
 
 
 Here, Qtt & Qt+1t+1 are present state & next state respectively. So, T flip-flop can be used for one of these two functions such as Hold, & Complement of present state based on the input conditions, when positive transition of clock signal is applied. The following table shows the characteristic table of T flip-flop.
 Inputs	Present State	Next State
 
+![Screenshot 2023-12-18 205225](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/d01d25a8-e0f9-4a82-9baf-a99cecc090ab)
 
-![image](https://user-images.githubusercontent.com/36288975/167909015-53aa9450-3f28-4202-887a-79d88228f8a0.png)
+![images](https://github.com/Kathiresan-23013376/Experiment--05-Implementation-of-flipflops-using-verilog/assets/150008375/e9895ce4-d99a-4cd5-b989-dde61388f461)
+
+
 
 From the above characteristic table, we can directly write the next state equation as
 Q(t+1)=T′Q(t)+TQ(t)′
@@ -109,8 +117,8 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Kathiresan-K
+RegisterNumber: 23013376
 */
 
 
